@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  margin: 0;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  line-height: 55px;
+}
+header img {
+  width: 26px;
+  height: 24px;
+  cursor: pointer;
+}
+header a img.top_arrow {
+  position: relative;
+  top: 16px;
+}
+header a img.top_home {
+  position: relative;
+  left: 200px;
+}
+header h1 {
+  font-size: 14px;
+  padding-left: 17px;
+}
+
+.section1 {
+  margin-bottom: 28px;
+}
+.section1 h3 {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  margin-top: 0;
+}
+.section1 img {
+  position: relative;
+  top: -40px;
+  left: 65px;
+  cursor: pointer;
+}
+.section1 .box {
+  width: 99%;
+  height: 180px;
+  border: 1px solid #ddd;
+  margin-top: -30px;
+}
+.section1 .box p {
+  padding: 20px 0 50px 20px;
+  margin: 0;
+}
+.section1 .box p.p_01 {
+  border-bottom: 1px solid #ddd;
+}
+.section1 .box p.p_02 {
+  display: inline-block;
+  height: 73px;
+  padding: 20px 90px 0 20px;
+  border-right: 1px solid #ddd;
+}
+.section1 .box p.p_03 {
+  display: inline-block;
+  padding: 20px 90px 0 20px;
+  position: absolute;
+}
+.section1 .box span {
+  width: 20px;
+  border: 3px solid #000;
+  display: block;
+}
+.section1 .box span.s_01 {
+  position: absolute;
+  top: 165px;
+  left: 38px;
+}
+.section1 .box span.s_02 {
+  position: absolute;
+  top: 254px;
+  left: 38px;
+}
+.section1 .box span.s_03 {
+  position: absolute;
+  top: 254px;
+  left: 229px;
+}
+
+.section2 ul {
+  list-style: none;
+  padding: 0;
+}
+.section2 ul li {
+  border-bottom: 1px solid #ddd;
+}
+.section2 ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 18px 0;
+  display: block;
+}
+.section2 ul li a:hover {
+  text-decoration: underline;
+}
+
+/* under */
+.under {
+  position: absolute;
+  left: 0;
+  top: 670px;
+  width: 100%;
+  height: 90px;
+  background: #F2F2F2;
+  overflow: hidden;
+}
+.under ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.under ul li {
+  position: relative;
+}
+.under ul li a {
+  text-decoration: none;
+  color: #5D5D5D;
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: -20px;
+}
+.under ul li a img {
+  position: relative;
+  left: -4px;
+}
+.under ul li a.category {
+  position: absolute;
+  left: -36px;
+}
+.under ul li a.category img {
+  left: 10px;
+}
+.under ul li a.tv {
+  position: absolute;
+  left: -13px;
+}
+.under ul li a.tv img {
+  left: -7px;
+}
+.under ul li a.login {
+  position: absolute;
+  left: -16px;
+}
+.under ul li a.login img {
+  left: -4px;
+}
+.under ul li a.my {
+  position: absolute;
+  left: -10px;
+}
+.under ul li a.my img {
+  left: -14px;
+}/*# sourceMappingURL=style_mypage.css.map */

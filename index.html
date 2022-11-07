@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29CM</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        html{width: 428px;}
+        body{background: #fff; height: 100vh; }
+        .phone{width: 437px; height: 803px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); background: url(./iphone.png) no-repeat; }
+        .content{width: 377px; height: 602px; background: #fff; position: absolute; top: 93px; left:30px;}
+        iframe{width: 100%; height: 615px; }
+    </style>
+</head>
+<body>
+    <div class="phone">
+        <div class="content">
+            <iframe src="./mobile/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> <!-- https://www.cdnpkg.com/modernizr/2.8.3 -->
+    <script> //이 라이브러리가 있어야 클로스브라우징됨. https://modernizr.com/download?setclasses&q=tou -> touch events
+    
+
+        var deviceAgent = navigator.userAgent.toLowerCase();
+
+        var isTouchDevice = Modernizr.touch ||
+        (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+        deviceAgent.match(/(android)/)  ||
+        deviceAgent.match(/(iemobile)/) ||
+        deviceAgent.match(/iphone/i) ||
+        deviceAgent.match(/ipad/i) ||
+        deviceAgent.match(/ipod/i) ||
+        deviceAgent.match(/blackberry/i) ||
+        deviceAgent.match(/bada/i));
+
+        if (isTouchDevice) {
+                //Do something touchy
+                location.href='http://hyeri0421.dothome.co.kr/05_mobile/mobile/'
+            } else {
+                //Can't touch this
+            }
+    </script>
+</body>
+</html>

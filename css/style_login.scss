@@ -1,0 +1,168 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    margin: 0;
+}
+#wrap{
+    width: 100%;
+}
+
+$black: #000;
+$grey:#4D4949;
+$grey_l:#D9D9D9;
+$white: #fff;
+
+.container{
+    padding: 0 15px;
+}
+
+header{
+    width: 100%; height: 70px; display: flex; line-height: 55px;
+    img{
+        width: 26px; height: 24px;
+        cursor: pointer;
+    }
+    a{
+        img.top_home{
+            position: relative;
+            left: 238px;
+        }
+    }
+    h1{
+        font-size: 14px;
+        padding-left: 17px;
+    }
+}
+
+.section1{
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 97%;
+        height: 30px;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding-left: 5px;
+    }
+    button{
+        cursor: pointer;
+        width: 99%;
+        border: none;
+        height: 40px;
+        background: #4D4949;
+        color: #fff;
+    }
+    p{
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 228px;
+    }
+    p.p_id{
+        position: absolute;
+        top: 252px;
+        left: 203px;
+    }
+    p.p_pw{
+        position: absolute;
+        top: 252px;
+        left: 283px;
+    }
+    p:hover{
+        text-decoration: underline;
+    }
+}
+
+.section2{
+    margin-top: 60px;
+    p{
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding-left: 30px;
+        li:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    button{
+        cursor: pointer;
+        width: 99%;
+        border: 1px solid #ddd;
+        height: 50px;
+        background: none;
+        margin-top: 10px;
+    }
+}
+
+/* under */
+.under{
+    position: absolute;
+    left: 0;
+    top: 525px;
+    width: 100%;
+    height: 90px;
+    background: #F2F2F2;
+    overflow: hidden;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        li{
+            position: relative;
+            a{
+                text-decoration: none;
+                color: #5D5D5D;
+                display: block;
+                position: absolute;
+                top: 8px;
+                left: -20px;
+                img{
+                    position: relative;
+                    left: -4px;
+                }
+            }
+            a.category{
+                position: absolute;
+                left: -36px;
+                img{
+                    left: 10px;
+                }
+            }
+            a.tv{
+                position: absolute;
+                left: -13px;
+                img{
+                    left: -7px;
+                }
+            }
+            a.login{
+                position: absolute;
+                left: -16px;
+                img{
+                    left: -4px;
+                }
+            }
+            a.my{
+                position: absolute;
+                left: -10px;
+                img{
+                    left: -14px;
+                }
+            }
+        }
+    }
+}
