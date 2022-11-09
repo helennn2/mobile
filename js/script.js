@@ -1,5 +1,5 @@
 /* section1 슬라이드 */
-$(document).ready(function() {
+$(window).ready(function() {
     slide();
   });
   
@@ -69,16 +69,6 @@ function slide() {
     });
   }
 
-  // 이전 버튼 클릭시 조건 검사후 슬라이드 무브
-  function prevChkPlay() {
-    if (now_num == 0) {
-      now_num = slide_length - 1;
-    } else {
-      now_num--;
-    }
-    slideMove();
-  }
-
   // 이후 버튼 클릭시 조건 검사후 슬라이드 무브
   function nextChkPlay() {
     if (now_num == slide_length - 1) {
@@ -122,36 +112,4 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-setTimeout(function(load){
-  loading = $('#loading');
-  loading.fadeOut();
-}, 2100)
 
-setTimeout(function(){
-  show = $('#wrap');
-  show.fadeIn();
-}, 2200)
-
-
-  // 로딩 바
-function tag () {
-  let progress = document.querySelector('.progressTag')
-  let interval = 1
-  let updatesPerSecond = 1000 / 60
-  let end = progress.max * 1.0
-
-  function animator () {
-    progress.value = progress.value + interval
-    if ( progress.value + interval < end){
-      setTimeout(animator, updatesPerSecond);
-    } else { 
-      progress.value = end
-    }
-  }
-
-  setTimeout(() => {
-    animator()
-  }, updatesPerSecond)
-}
-
-tag()

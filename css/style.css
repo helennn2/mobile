@@ -16,7 +16,6 @@ html, body {
   width: 360px;
   margin: 0;
   overflow: hidden;
-  display: none;
 }
 
 .container {
@@ -559,4 +558,4 @@ header h1 img.search {
 #loading .main progress::-moz-progress-bar {
   background-color: #eee;
   border-radius: 8px;
-}
+}/*# sourceMappingURL=style.css.map */
