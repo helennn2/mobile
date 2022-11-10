@@ -36,6 +36,8 @@ header a img.top_home {
 header h1 {
   font-size: 14px;
   padding-left: 17px;
+  font-weight: normal;
+  margin-top: 12px;
 }
 
 .section1 label {
@@ -99,6 +101,7 @@ header h1 {
   height: 50px;
   background: none;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 /* under */

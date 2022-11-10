@@ -40,6 +40,7 @@ header a img.top_home {
 header h1 {
   font-size: 14px;
   padding-left: 17px;
+  font-weight: normal;
 }
 
 .section ul {
@@ -57,6 +58,7 @@ header h1 {
 }
 .section ul li a h2 {
   font-size: 16px;
+  font-weight: normal;
 }
 .section ul li a span {
   display: block;
